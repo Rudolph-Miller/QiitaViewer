@@ -7,16 +7,25 @@
 //
 
 import UIKit
+import Alamofire
 
 class ArticleListViewController: UIViewController {
     let table = UITableView()
 
+    func getArticles() {
+        Alamofire.request(.GET, "https://qiita.com/api/v2/items")
+            .responseJSON { response in
+                print(response.result.value)
+            }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "新着記事"
 
         table.frame = view.frame
         view.addSubview(table)
+        getArticles()
     }
     
     override func didReceiveMemoryWarning() {
