@@ -9,8 +9,14 @@
 import UIKit
 
 class ArticleListViewController: UIViewController {
+    let table = UITableView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "新着記事"
+
+        table.frame = view.frame
+        view.addSubview(table)
     }
     
     override func didReceiveMemoryWarning() {
