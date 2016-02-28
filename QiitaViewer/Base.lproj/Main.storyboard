@@ -4,38 +4,33 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--ArticleListViewController-->
+        <!--新着-->
         <scene sceneID="tIh-ao-nbs">
             <objects>
-                <viewController title="ArticleListViewController" id="Zbz-1R-fMe" customClass="ArticleListViewController" customModule="QiitaViewer" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qsz-qF-MNJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="Any-BT-QOM"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IAp-Bp-8DP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Vss-hc-Gbm"/>
+                <viewController title="新着" automaticallyAdjustsScrollViewInsets="NO" id="Zbz-1R-fMe" customClass="ArticleListViewController" customModule="QiitaViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PrY-80-P59" userLabel="新着記事"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IoN-XT-HNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="509"/>
+            <point key="canvasLocation" x="998" y="447"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A8c-hG-ncs">
             <objects>
-                <navigationController id="QgP-is-RQv" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QgP-is-RQv" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2se-o2-Lxs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="HCQ-b6-6ut">
+                        <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
                     <connections>
-                        <segue destination="Zbz-1R-fMe" kind="relationship" relationship="rootViewController" id="kZv-Er-qVn"/>
+                        <segue destination="Zbz-1R-fMe" kind="relationship" relationship="rootViewController" id="5Rl-kg-1UK"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Imk-n5-sxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
