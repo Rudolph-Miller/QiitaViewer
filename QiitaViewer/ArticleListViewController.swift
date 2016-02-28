@@ -48,7 +48,7 @@ class ArticleListViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "新着記事"
+        self.title = "新着記事一覧"
 
         table.frame = view.frame
         view.addSubview(table)
