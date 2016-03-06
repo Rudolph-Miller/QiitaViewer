@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F72DCA421C8C510100B4416C /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72DCA411C8C510100B4416C /* PagingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F757741E1C8C545F00FD8EB8 /* PagingMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F757741D1C8C545F00FD8EB8 /* PagingMenuController.framework */; };
 		F77A40571C8BF70D00430C72 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A40561C8BF70D00430C72 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		F7B2B2A21C8349FF00AC43DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2B2A11C8349FF00AC43DD /* AppDelegate.swift */; };
 		F7B2B2A71C8349FF00AC43DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B2B2A51C8349FF00AC43DD /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		F72DCA411C8C510100B4416C /* PagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
+		F757741D1C8C545F00FD8EB8 /* PagingMenuController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PagingMenuController.framework; path = Carthage/Build/iOS/PagingMenuController.framework; sourceTree = "<group>"; };
 		F77A40561C8BF70D00430C72 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F7B2B29E1C8349FF00AC43DD /* QiitaViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B2B2A11C8349FF00AC43DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F757741E1C8C545F00FD8EB8 /* PagingMenuController.framework in Frameworks */,
 				F7B2B2D11C834AFC00AC43DD /* Alamofire.framework in Frameworks */,
 				F7B2B2D21C834AFC00AC43DD /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -87,6 +90,7 @@
 		F7B2B2951C8349FF00AC43DD = {
 			isa = PBXGroup;
 			children = (
+				F757741D1C8C545F00FD8EB8 /* PagingMenuController.framework */,
 				F7B2B2CF1C834AFC00AC43DD /* Alamofire.framework */,
 				F7B2B2D01C834AFC00AC43DD /* SwiftyJSON.framework */,
 				F7B2B2A01C8349FF00AC43DD /* QiitaViewer */,
@@ -95,6 +99,7 @@
 				F7B2B29F1C8349FF00AC43DD /* Products */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 0;
 		};
 		F7B2B29F1C8349FF00AC43DD /* Products */ = {
 			isa = PBXGroup;
@@ -277,6 +282,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PagingMenuController.framework",
 			);
 			outputPaths = (
 			);
