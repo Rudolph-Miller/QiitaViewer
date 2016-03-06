@@ -12,7 +12,12 @@ class MainViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
 
     @IBAction func toggle(sender: UISegmentedControl) {
-        label.text = "OFF"
+        switch sender.selectedSegmentIndex {
+            case 0: label.text = "ON"
+            case 1: label.text = "OFF"
+            default:
+                break
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
