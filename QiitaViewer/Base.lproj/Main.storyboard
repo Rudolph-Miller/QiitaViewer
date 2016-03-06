@@ -53,7 +53,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="label" destination="aLT-mo-TbT" id="fkh-0E-HF1"/>
-                        <outlet property="toggleButton" destination="mht-zl-gbZ" id="VJ8-Cp-7BX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYY-L9-yAw" userLabel="First Responder" sceneMemberID="firstResponder"/>

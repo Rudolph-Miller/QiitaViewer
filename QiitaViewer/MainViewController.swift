@@ -10,7 +10,6 @@ import UIKit
 
 class MainViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var toggleButton: UISegmentedControl!
 
     @IBAction func toggle(sender: UISegmentedControl) {
         label.text = "OFF"
