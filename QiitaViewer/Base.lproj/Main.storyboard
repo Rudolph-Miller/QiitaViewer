@@ -4,24 +4,44 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="1Vl-5v-fAN">
             <objects>
-                <viewController id="DXf-P9-857" sceneMemberID="viewController">
+                <viewController id="DXf-P9-857" customClass="MainViewController" customModule="QiitaViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ngz-WW-0Uz"/>
                         <viewControllerLayoutGuide type="bottom" id="4GK-wt-i1P"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="C2Z-5X-yci">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mht-zl-gbZ">
+                                <rect key="frame" x="147" y="410" width="121" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="ON"/>
+                                    <segment title="OFF"/>
+                                </segments>
+                                <connections>
+                                    <action selector="toggle:" destination="DXf-P9-857" eventType="valueChanged" id="QBK-Yp-llD"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLT-mo-TbT">
+                                <rect key="frame" x="186" y="357" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="wdX-N1-Bra">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="y59-Bc-rHG">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zZt-cv-guD">
-                                <rect key="frame" x="447" y="7" width="133" height="30"/>
+                                <rect key="frame" x="261" y="7" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="新着"/>
@@ -31,10 +51,14 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="label" destination="aLT-mo-TbT" id="fkh-0E-HF1"/>
+                        <outlet property="toggleButton" destination="mht-zl-gbZ" id="VJ8-Cp-7BX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYY-L9-yAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1176" y="182"/>
+            <point key="canvasLocation" x="1138" y="188"/>
         </scene>
         <!--新着-->
         <scene sceneID="tIh-ao-nbs">
@@ -51,6 +75,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iQH-mo-hrG" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ru8-n3-Yg8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

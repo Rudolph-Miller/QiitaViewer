@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F77A40571C8BF70D00430C72 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A40561C8BF70D00430C72 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		F7B2B2A21C8349FF00AC43DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2B2A11C8349FF00AC43DD /* AppDelegate.swift */; };
 		F7B2B2A71C8349FF00AC43DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B2B2A51C8349FF00AC43DD /* Main.storyboard */; };
 		F7B2B2A91C8349FF00AC43DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B2B2A81C8349FF00AC43DD /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F77A40561C8BF70D00430C72 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F7B2B29E1C8349FF00AC43DD /* QiitaViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B2B2A11C8349FF00AC43DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7B2B2A61C8349FF00AC43DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				F7B2B2AA1C8349FF00AC43DD /* LaunchScreen.storyboard */,
 				F7B2B2AD1C8349FF00AC43DD /* Info.plist */,
 				F7B2B2D81C834D4C00AC43DD /* ArticleListViewController.swift */,
+				F77A40561C8BF70D00430C72 /* MainViewController.swift */,
 			);
 			path = QiitaViewer;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F77A40571C8BF70D00430C72 /* MainViewController.swift in Sources */,
 				F7B2B2A21C8349FF00AC43DD /* AppDelegate.swift in Sources */,
 				F7B2B2D91C834D4C00AC43DD /* ArticleListViewController.swift in Sources */,
 			);
